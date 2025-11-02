@@ -1,0 +1,14 @@
+
+<svg width="400" height="460" viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="gloss" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0.0" stop-color="#FFFFFF" stop-opacity="0.35"/>
+    <stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<path d="M200 20 L350 100 L310 300 L200 420 L90 300 L50 100 Z" fill="#0F4C75" stroke="#FFFFFF" stroke-width="6"/>
+<path d="M200 20 L350 100 L200 180 L50 100 Z" fill="url(#gloss)" />
+<text x="50%" y="200" font-size="40" fill="#FFFFFF" font-family="Georgia" font-weight="700" text-anchor="middle">Detailing</text>
+<text x="50%" y="245" font-size="34" fill="#F4C431" font-family="Georgia" font-weight="700" text-anchor="middle">Facile</text>
+<text x="50%" y="290" font-size="22" fill="#FFFFFF" font-family="Georgia" text-anchor="middle">Résultats premium à la maison</text>
+</svg>
