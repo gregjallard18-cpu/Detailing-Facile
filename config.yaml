@@ -1,0 +1,9 @@
+baseURL: "https://detailing-facile.pages.dev/"
+languageCode: fr
+title: "Detailing Facile"
+pagination:
+  pagerSize: 10
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
