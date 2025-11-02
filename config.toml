@@ -1,9 +1,9 @@
 baseURL = "/"
 languageCode = "fr"
 title = "Detailing Facile"
+
 [pagination]
   pagerSize = 10
-
 
 [markup]
   [markup.goldmark]
