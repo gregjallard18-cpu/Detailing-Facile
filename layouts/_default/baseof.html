@@ -1,17 +1,22 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>{{ .Title }} - Detailing Facile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ if .IsHome }}Detailing Facile – {{ end }}{{ .Title }}</title>
   <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}Detailing Facile — Résultats premium à la maison{{ end }}">
-  <style>
-    body{margin:0;font-family:Georgia,serif;background:#F7F9FA;color:#111;}
-    main{max-width:960px;margin:24px auto;padding:0 20px;}
-    h1,h2{color:#0F4C75;margin-top:0.4em;}
-    a{color:#0F4C75;}
-  </style>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="stylesheet" href="/css/main.css">
+  {{ with .Site.Params.ga_id }}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ . }}');
+  </script>
+  {{ end }}
 </head>
 <body>
   {{ partial "header.html" . }}
@@ -19,5 +24,6 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
+  {{ partial "contact-fab.html" . }}
 </body>
 </html>

@@ -1,6 +1,12 @@
 {{ define "main" }}
-<article>
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-</article>
+<section class="section">
+  <div class="container">
+    <article class="card">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+      <hr/>
+      <p class="small">Greg — Conseils pour une protection et une brillance professionnelles.</p>
+    </article>
+  </div>
+</section>
 {{ end }}
