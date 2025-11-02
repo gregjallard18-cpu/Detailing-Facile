@@ -1,0 +1,9 @@
+baseURL = "/"
+languageCode = "fr"
+title = "Detailing Facile"
+paginate = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
