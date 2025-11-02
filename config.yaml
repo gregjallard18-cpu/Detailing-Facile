@@ -3,6 +3,25 @@ languageCode: fr
 title: "Detailing Facile"
 pagination:
   pagerSize: 10
+params:
+  ga_id: "G-6HPY4BQS14"
+  amazon_tag: "detailingfaci-21"
+  contact_email: "detailingfacile@gmail.com"
+  hero_title: "Les meilleurs produits pour protéger votre carrosserie"
+  hero_subtitle: "La brillance professionnelle à la maison"
+  cta_text: "Améliorer la brillance de ma voiture"
+  slogan: "La brillance professionnelle à la maison"
+menu:
+  main:
+    - name: Accueil
+      url: /
+      weight: 1
+    - name: Guides
+      url: /guides/
+      weight: 2
+    - name: Articles
+      url: /articles/
+      weight: 3
 markup:
   goldmark:
     renderer:
