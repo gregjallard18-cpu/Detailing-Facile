@@ -20,4 +20,10 @@ header img.logo{height:48px} nav a{color:#fff;text-decoration:none;margin-left:1
 .brand strong {
   color:var(--gold);
 }
+/* Logo dans le header */
+header.site img.logo {
+  height: 36px;
+  width: auto;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.5));
+}
 
