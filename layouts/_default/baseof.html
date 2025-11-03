@@ -20,10 +20,11 @@
 </head>
 <body>
   {{ partial "header.html" . }}
+  {{ if .IsHome }}{{ partial "hero.html" . }}{{ end }}
+  {{ if .IsHome }}{{ partial "products.html" . }}{{ end }}
   <main>
-    {{ block "main" . }}{{ end }}
+      {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
   {{ partial "contact-fab.html" . }}
 </body>
-</html>
