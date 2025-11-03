@@ -1,4 +1,7 @@
-:root{--blue:#0F4C75;--gold:#F4C431;--muted:#f5f7fb}
+:root{
+  --blue:#003B73; /* Bleu Audi */
+  --gold:#F4C431;
+  --muted:#F6F7FA;
 *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--muted);color:#0b1320}
 a{color:var(--blue)} .container{max-width:1120px;margin:0 auto;padding:0 20px}
 header.site{background:var(--blue);color:#fff} header .inner{display:flex;align-items:center;gap:14px;padding:16px 0}
