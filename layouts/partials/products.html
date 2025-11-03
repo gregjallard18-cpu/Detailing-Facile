@@ -1,22 +1,14 @@
-<section id="produits" class="section">
+<section id="produits">
   <div class="container">
     <h2>Nos recommandations</h2>
-    <div class="cardgrid">
+
+    {{ range .Site.Data.products }}
       <div class="card">
-        <h3>Spray céramique — Débutant</h3>
-        <p>Application facile, brillance immédiate.</p>
-        <a class="cta" href="https://www.amazon.fr/s?k=spray+c%C3%A9ramique&tag=detailingfaci-21" target="_blank" rel="nofollow noopener">Voir sur Amazon</a>
+        <h3>{{ .name }}</h3>
+        <p>{{ .description }}</p>
+        <a class="btn" href="{{ .link }}" target="_blank">Voir sur Amazon</a>
       </div>
-      <div class="card">
-        <h3>Protection céramique — Premium</h3>
-        <p>Durabilité supérieure, effet perlé.</p>
-        <a class="cta" href="https://www.amazon.fr/s?k=protection+c%C3%A9ramique+voiture&tag=detailingfaci-21" target="_blank" rel="nofollow noopener">Voir sur Amazon</a>
-      </div>
-      <div class="card">
-        <h3>Microfibres qualité pro</h3>
-        <p>Finition sans trace.</p>
-        <a class="cta" href="https://www.amazon.fr/s?k=microfibre+voiture&tag=detailingfaci-21" target="_blank" rel="nofollow noopener">Voir sur Amazon</a>
-      </div>
-    </div>
+    {{ end }}
+
   </div>
 </section>
