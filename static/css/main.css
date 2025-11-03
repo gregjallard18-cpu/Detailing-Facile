@@ -26,4 +26,15 @@ header.site img.logo {
   width: auto;
   filter: drop-shadow(0 0 4px rgba(0,0,0,0.5));
 }
+header.site {
+  background: var(--blue);
+  color: #fff;
+}
+header.site nav a {
+  color: #fff;
+  opacity: 0.85;
+}
+header.site nav a:hover {
+  opacity: 1;
+}
 
