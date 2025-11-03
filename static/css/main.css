@@ -54,34 +54,38 @@ header.site nav a:hover{
 }
 
 /* Hero */
-.hero{
-  background:linear-gradient(180deg,#8A0000 0%,#B00000 50%,#8A0000 100%);
-  color:#fff;
-  padding:60px 20px;
-  text-align:center;
-  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+.hero {
+  background: linear-gradient(180deg,#8A0000 0%, #C11111 50%, #8A0000 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
 }
-.hero h1{
-  font-size:28px;
-  margin-bottom:10px;
+
+.hero h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
-.hero p{
-  opacity:0.9;
-  margin-bottom:20px;
+
+.hero p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 25px;
 }
-.cta{
-  display:inline-block;
-  background:var(--gold);
-  color:#000;
-  border-radius:8px;
-  padding:12px 20px;
-  font-weight:700;
-  text-decoration:none;
-  border:0;
-  transition:background .2s;
+
+.hero .cta {
+  display: inline-block;
+  background: #FFC400;
+  color: #000;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
 }
-.cta:hover{
-  background:#e5b72b;
+
+.hero .cta:hover {
+  background: #ffdb4d;
 }
 
 /* Sections */
