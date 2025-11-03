@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}Detailing Facile – Accueil{{ else }}{{ .Title }} | Detailing Facile{{ end }}</title>
+  <title>{{ if .IsHome }}Detailing Facile — Résultats premium à la maison{{ else }}{{ .Title }} — Detailing Facile{{ end }}</title>
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
+
   {{ partial "header.html" . }}
 
   <main>
@@ -16,5 +17,6 @@
 
   {{ partial "footer.html" . }}
   {{ partial "contact-fab.html" . }}
+
 </body>
 </html>
