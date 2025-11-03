@@ -2,29 +2,19 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{ if .IsHome }}Detailing Facile – {{ end }}{{ .Title }}</title>
-  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}Detailing Facile — Résultats premium à la maison{{ end }}">
-  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}Detailing Facile – Accueil{{ else }}{{ .Title }} | Detailing Facile{{ end }}</title>
   <link rel="stylesheet" href="/css/main.css">
-  {{ with .Site.Params.ga_id }}
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ . }}');
-  </script>
-  {{ end }}
 </head>
+
 <body>
   {{ partial "header.html" . }}
-  {{ if .IsHome }}{{ partial "hero.html" . }}{{ end }}
-  {{ if .IsHome }}{{ partial "products.html" . }}{{ end }}
+
   <main>
-      {{ block "main" . }}{{ end }}
+    {{ block "main" . }}{{ end }}
   </main>
+
   {{ partial "footer.html" . }}
   {{ partial "contact-fab.html" . }}
 </body>
+</html>
