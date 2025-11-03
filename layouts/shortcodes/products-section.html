@@ -1,0 +1,14 @@
+<section class="home-products">
+  <div class="container">
+    <h2>Nos recommandations</h2>
+
+    {{ range .Site.Data.products }}
+    <article class="product-card">
+      <h3>{{ .name }}</h3>
+      <p>{{ .description }}</p>
+      <a class="btn" href="{{ .link }}" target="_blank">Voir sur Amazon</a>
+    </article>
+    {{ end }}
+
+  </div>
+</section>
