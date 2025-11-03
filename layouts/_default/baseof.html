@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
-<body>
+  <body>
 
   {{ partial "header.html" . }}
+
+  {{ if .IsHome }}
+    {{ partial "hero.html" . }}
+  {{ end }}
 
   <main>
     {{ block "main" . }}{{ end }}
@@ -19,4 +23,3 @@
   {{ partial "contact-fab.html" . }}
 
 </body>
-</html>
